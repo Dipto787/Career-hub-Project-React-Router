@@ -1,8 +1,8 @@
 import { CiLocationOn } from "react-icons/ci";
 import { CiDollar } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 const ShowFeatureData = ({ featureData }) => {
-    let { job_title, company_name, educational_requirements, job_type, location, logo, remote_or_onsite, salary } = featureData;
-    console.log(featureData)
+    let { job_title, company_name, educational_requirements, job_type, location, logo, remote_or_onsite, salary,id } = featureData; 
     return (
         <div>
             <div className="card card-compact  p-8 space-y-5  border-2">
@@ -25,7 +25,9 @@ const ShowFeatureData = ({ featureData }) => {
                          
                     </div>
                     <div className="card-actions  ">
-                        <button className="btn text-white font-bold h-10 bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">View Details</button>
+                       <NavLink to={`/applied/${id}`}>
+                       <button className="btn text-white font-bold h-10 bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">View Details</button>
+                       </NavLink>
                     </div>
                 </div>
             </div>

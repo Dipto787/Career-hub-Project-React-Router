@@ -25,7 +25,8 @@ let router=createBrowserRouter([
       },
       
       {
-        path:'/applied',
+        path:'/applied/:id',
+        loader:()=>fetch('/src/assets/jobs.json'),
         element:<AppliedJobs></AppliedJobs>
       }
     ]

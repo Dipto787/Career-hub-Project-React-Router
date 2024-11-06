@@ -8,8 +8,9 @@ const Navbar = () => {
        <NavLink><li><a href="">Blog </a></li></NavLink> 
       </>;
     return (
-        <div className="navbar max-w-6xl mx-auto ">
-        <div className="navbar-start">
+        <div className=" bg-[#F9F9FF] ">
+     <div className="max-w-6xl navbar mx-auto">
+     <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -43,6 +44,10 @@ const Navbar = () => {
         <div className="navbar-end">
           <a className="btn text-white font-bold h-14 bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">Start Applying</a>
         </div>
+     </div>
+
+
+     
       </div>
     );
 };

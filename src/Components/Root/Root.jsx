@@ -7,14 +7,12 @@ import Footer from "./Home/Footer";
  
 const Root = () => {
     return (
-        <div>
-         <div>
-           <div  className=' bg-[#F9F9FF] '>
+        <div> 
+           <div  className='  '>
           <Navbar></Navbar>  
-          </div>
           <Outlet></Outlet> 
-          <Footer></Footer>
-           </div>
+          </div>
+          <Footer></Footer> 
         </div>
     );
 };
