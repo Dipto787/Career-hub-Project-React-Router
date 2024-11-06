@@ -10,6 +10,8 @@ import Root from './Components/Root/Root.jsx';
 import Banner from './Components/Banner/Banner.jsx';
 import Footer from './Components/Root/Home/Footer.jsx';
 import Home from './Components/Root/Home/Home.jsx';
+import FeturedJob from './Components/Featured/FeturedJob.jsx';
+import AppliedJobs from './Components/AppliedJobs/AppliedJobs.jsx';
 
 let router=createBrowserRouter([
   {
@@ -19,11 +21,12 @@ let router=createBrowserRouter([
       {
         path:'/',
         loader:()=>fetch('/src/assets/categories.json'),
-        element: <Home></Home>
+        element: <Home></Home>,
       },
+      
       {
-        path:'/tom',
-        element:<Footer></Footer>
+        path:'/applied',
+        element:<AppliedJobs></AppliedJobs>
       }
     ]
   }

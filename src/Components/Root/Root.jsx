@@ -13,6 +13,7 @@ const Root = () => {
           <Navbar></Navbar>  
           </div>
           <Outlet></Outlet> 
+          <Footer></Footer>
            </div>
         </div>
     );

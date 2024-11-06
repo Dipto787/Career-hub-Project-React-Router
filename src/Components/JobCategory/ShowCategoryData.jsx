@@ -1,5 +1,4 @@
- const ShowCategoryData = ({category}) => {
-    console.log(category)
+ const ShowCategoryData = ({category}) => { 
     return (
         <div>
             <div className="bg-[#F9F9FF] p-8 rounded-xl ">
