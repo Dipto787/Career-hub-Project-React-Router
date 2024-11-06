@@ -7,11 +7,23 @@ import {
 } from "react-router-dom";
 import App from './App.jsx' 
 import Root from './Components/Root/Root.jsx';
+import Banner from './Components/Banner/Banner.jsx';
+import Footer from './Components/Root/Home/Footer.jsx';
 
 let router=createBrowserRouter([
   {
     path:'/',
-    element:<Root></Root>
+    element:<Root></Root>,
+    children:[
+      {
+        path:'/',
+        element:<Banner></Banner>
+      },
+      {
+        path:'/tom',
+        element:<Footer></Footer>
+      }
+    ]
   }
 ])
 
