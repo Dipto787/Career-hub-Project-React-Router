@@ -9,6 +9,7 @@ import App from './App.jsx'
 import Root from './Components/Root/Root.jsx';
 import Banner from './Components/Banner/Banner.jsx';
 import Footer from './Components/Root/Home/Footer.jsx';
+import Home from './Components/Root/Home/Home.jsx';
 
 let router=createBrowserRouter([
   {
@@ -17,7 +18,8 @@ let router=createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<Banner></Banner>
+        loader:()=>fetch('/src/assets/categories.json'),
+        element: <Home></Home>
       },
       {
         path:'/tom',

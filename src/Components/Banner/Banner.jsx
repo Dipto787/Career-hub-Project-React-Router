@@ -1,8 +1,8 @@
 
 const Banner = () => {
     return (
-        <div className="bg-[#F9F9FF]">
-            <div className="max-w-6xl px-6 md:flex items-center py-24 mx-auto">
+        <div className="bg-[#F9F9FF] ">
+            <div className="max-w-6xl px-6 md:flex items-center pt-24 mx-auto">
 
                 <div className="space-y-8">
                     <h1 className="lg:text-7xl text-4xl lg:w-4/5  font-semibold">One Step Closer To Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Dream Job</span></h1>
@@ -11,7 +11,7 @@ const Banner = () => {
                 </div>
 
                 <div>
-            <img className="w-[100%]" src="/src/assets/user.png" alt="" />
+            <img className="" src="/src/assets/user.png" alt="" />
                 </div>
 
             </div>

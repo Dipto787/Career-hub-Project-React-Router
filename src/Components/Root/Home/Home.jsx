@@ -3,16 +3,17 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Banner from '../../Banner/Banner';
+import Category from '../../JobCategory/Category';
 
 const Home = () => {
     return (
         <div>
-           <div className=' bg-[#F9F9FF] '>
-           <div className="  ">
-          <Navbar></Navbar>  
+            <Banner></Banner>
+          <div>
+        <div className='mt-16'>
+        <Category></Category>
+        </div>
           </div>
-           </div>
-          <Outlet></Outlet>
         </div>
     );
 };
