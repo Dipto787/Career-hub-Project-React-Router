@@ -4,8 +4,10 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     let Link= <> 
        <NavLink to='/'><li><a href="">Statistics   </a></li></NavLink> 
-       <NavLink to='/applied'><li><a href="">Applied Jobs </a></li></NavLink> 
-       <NavLink><li><a href="">Blog </a></li></NavLink> 
+
+       <NavLink to='/appliedJobs'><li><a href="">Applied Jobs </a></li></NavLink> 
+
+       <NavLink ><li><a href="">Blog </a></li></NavLink> 
       </>;
     return (
         <div className=" bg-[#F9F9FF] ">

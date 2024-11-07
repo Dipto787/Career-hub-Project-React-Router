@@ -12,6 +12,8 @@ import Footer from './Components/Root/Home/Footer.jsx';
 import Home from './Components/Root/Home/Home.jsx';
 import FeturedJob from './Components/Featured/FeturedJob.jsx';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs.jsx';
+import ShowApplied from './Components/Root/Home/ShowApplied.jsx';
+import Applied from './Components/Root/Home/Applied.jsx';
 
 let router=createBrowserRouter([
   {
@@ -28,6 +30,11 @@ let router=createBrowserRouter([
         path:'/applied/:id',
         loader:()=>fetch('/src/assets/jobs.json'),
         element:<AppliedJobs></AppliedJobs>
+      },
+      {
+        path:'/appliedJobs', 
+        loader:()=>fetch('/src/assets/jobs.json'),
+        element:<ShowApplied></ShowApplied>
       }
     ]
   }

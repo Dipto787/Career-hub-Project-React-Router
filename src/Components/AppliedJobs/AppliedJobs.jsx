@@ -6,14 +6,26 @@ import { CiLocationOn } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import Bg from "../Bg";
 import { CiDollar } from "react-icons/ci";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { getLocalStorageData, setDataOnLocalStorage } from "../SetLocalstoreage/Stored";
+import { useEffect, useState } from "react";
+import ShowApplied from "../Root/Home/ShowApplied";
+
  const AppliedJobs = () => {
     const detailsData=useLoaderData();
     let params=useParams();
     let idInt=parseInt(params.id);
     let exist=detailsData.find(detailId=>detailId.id===idInt);
-    let {job_description,job_responsibility,educational_requirements,experiences,salary,job_title,contact_information}=exist;
-    console.log(exist) 
-    
+    let {job_description,job_responsibility,educational_requirements,experiences,salary,job_title,contact_information}=exist; 
+    let handleToast=()=>{
+        setDataOnLocalStorage(idInt);
+        toast('You Have Success fully!!!');
+    }
+
+ 
+
     return (
         <div className="">
             <Bg></Bg>
@@ -58,10 +70,10 @@ import { CiDollar } from "react-icons/ci";
                 </div>
          </div>
 
-    <button className="btn mt-5 text-white w-full font-bold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">Apply Now</button>
+    <button onClick={handleToast} className="btn mt-5 text-white w-full font-bold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">Apply Now</button>
             </div>
 
-            
+            <ToastContainer></ToastContainer>
                        
 
           </div>
