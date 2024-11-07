@@ -4,6 +4,7 @@ const Applied = ({ store }) => {
     console.log(store)
     return (
         <div className="px-2">
+            
             <div className="card card-side flex md:flex-row  flex-col items-center border p-5 gap-5 mt-8    max-w-6xl mx-auto">
                 <figure className="bg-[#F4F4F4] py-16 px-12 rounded">
                     <img width='300'
@@ -22,6 +23,8 @@ const Applied = ({ store }) => {
                     <button className="btn text-white font-bold h-10 bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">View Details</button>
                     </div>
             </div>
+
+            
         </div>
     );
 };
